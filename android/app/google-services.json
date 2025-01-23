@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1047434689210",
+    "project_id": "cricket-player-tracking",
+    "storage_bucket": "cricket-player-tracking.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1047434689210:android:c7b203e98b38608ecd2083",
+        "android_client_info": {
+          "package_name": "com.example.cricket_player_tracking"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTxyIXv-pGuAKolg7ZiK9NXgmJ1-Lrhxk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
