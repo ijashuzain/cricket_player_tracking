@@ -8,19 +8,19 @@ import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class PlayerDetailsScreen extends StatefulWidget {
+class PlayerDetailView extends StatefulWidget {
   final Player player;
 
-  const PlayerDetailsScreen({
+  const PlayerDetailView({
     Key? key,
     required this.player,
   }) : super(key: key);
 
   @override
-  State<PlayerDetailsScreen> createState() => _PlayerDetailsScreenState();
+  State<PlayerDetailView> createState() => _PlayerDetailViewState();
 }
 
-class _PlayerDetailsScreenState extends State<PlayerDetailsScreen> {
+class _PlayerDetailViewState extends State<PlayerDetailView> {
   late Player _player;
 
   @override
@@ -305,7 +305,7 @@ class _PlayerDetailsScreenState extends State<PlayerDetailsScreen> {
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (_) => AddPerformanceScreen(playerId: _player.id),
+        builder: (_) => AddPerformanceView(playerId: _player.id),
       ),
     );
   }

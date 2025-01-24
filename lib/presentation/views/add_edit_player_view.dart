@@ -7,19 +7,19 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 
-class AddEditPlayerScreen extends StatefulWidget {
+class AddEditPlayerView extends StatefulWidget {
   final Player? player;
 
-  const AddEditPlayerScreen({
+  const AddEditPlayerView({
     Key? key,
     this.player,
   }) : super(key: key);
 
   @override
-  State<AddEditPlayerScreen> createState() => _AddEditPlayerScreenState();
+  State<AddEditPlayerView> createState() => _AddEditPlayerViewState();
 }
 
-class _AddEditPlayerScreenState extends State<AddEditPlayerScreen> {
+class _AddEditPlayerViewState extends State<AddEditPlayerView> {
   final _formKey = GlobalKey<FormState>();
   late final TextEditingController _nameController;
   late final TextEditingController _ageController;

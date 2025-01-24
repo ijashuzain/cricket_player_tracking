@@ -19,7 +19,7 @@ class PlayerCard extends StatelessWidget {
         onTap: () => Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (_) => PlayerDetailsScreen(player: player),
+            builder: (_) => PlayerDetailView(player: player),
           ),
         ),
         borderRadius: BorderRadius.circular(12),

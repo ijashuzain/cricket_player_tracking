@@ -7,19 +7,19 @@ import 'package:connectivity_plus/connectivity_plus.dart';
 import '../../domain/entities/player.dart';
 import '../widgets/custom_form_field.dart';
 
-class AddPerformanceScreen extends StatefulWidget {
+class AddPerformanceView extends StatefulWidget {
   final String playerId;
 
-  const AddPerformanceScreen({
+  const AddPerformanceView({
     Key? key,
     required this.playerId,
   }) : super(key: key);
 
   @override
-  State<AddPerformanceScreen> createState() => _AddPerformanceScreenState();
+  State<AddPerformanceView> createState() => _AddPerformanceViewState();
 }
 
-class _AddPerformanceScreenState extends State<AddPerformanceScreen> {
+class _AddPerformanceViewState extends State<AddPerformanceView> {
   final _formKey = GlobalKey<FormState>();
   final _dailyScoreController = TextEditingController();
   final _matchDetailsController = TextEditingController();

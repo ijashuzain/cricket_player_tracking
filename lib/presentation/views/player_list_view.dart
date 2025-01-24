@@ -9,14 +9,14 @@ import '../widgets/player_card.dart';
 import '../widgets/search_bar_widget.dart';
 import '../widgets/error_view.dart';
 
-class PlayerListScreen extends StatefulWidget {
-  const PlayerListScreen({Key? key}) : super(key: key);
+class PlayerListView extends StatefulWidget {
+  const PlayerListView({Key? key}) : super(key: key);
 
   @override
-  State<PlayerListScreen> createState() => _PlayerListScreenState();
+  State<PlayerListView> createState() => _PlayerListViewState();
 }
 
-class _PlayerListScreenState extends State<PlayerListScreen> {
+class _PlayerListViewState extends State<PlayerListView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -62,7 +62,7 @@ class _PlayerListScreenState extends State<PlayerListScreen> {
         onPressed: () {
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (_) => const AddEditPlayerScreen()),
+            MaterialPageRoute(builder: (_) => const AddEditPlayerView()),
           ).then((val) {
             context.read<PlayerBloc>().add(const PlayerEvent.fetchAllPlayers());
           });
